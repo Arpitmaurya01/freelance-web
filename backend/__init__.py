@@ -2,11 +2,20 @@
 from flask_mongoengine import MongoEngine
 from flask import Flask, render_template
 from flask_docs import  ApiDoc
+from flask_jwt_extended import JWTManager
+
+# --- for SQL use below ---
 # from flask_sqlalchemy import SQLAlchemy
 # from flask_migrate import Migrate
 # db = SQLAlchemy()
 # migrate = Migrate()
+
+
+# ---for NoSql ----
 mongo = MongoEngine()
+
+class MyException(BaseException):
+    pass
 
 def page_not_found(error):
     return render_template('404.html'), 404
@@ -15,16 +24,28 @@ def page_not_found(error):
 def create_app(object_name):
     # from .users.controllers import users_blueprint
     app = Flask(__name__)
+    jwt = JWTManager(app)
     app.config.from_object(object_name)
-    mongo.init_app(app)
+    # --- for SQL use below ---
     # db.init_app(app)
     # migrate.init_app(app, db)
-    # register your blue pirnt here
+    
+    # ---for NoSql ----
+    mongo.init_app(app)
+    
+    
+    # register your blueprints here
     # app.register_blueprint(users_blueprint)
-    from .users import create_module as user_create_module
+    
+    # or you can call create_module for each module 
+    from .users import create_module as register_user
     
     # register you modules here
-    user_create_module(app)
+    register_user(app)
+    
+    
+    
+    
     ApiDoc(
         app,
         title="Flask Backend",
@@ -35,8 +56,7 @@ def create_app(object_name):
     app.register_error_handler(404, page_not_found)
     # app.register_error_handler(200,home)
     
-    # APIs that need to display documents
-    app.config['API_DOC_MEMBER'] = ['user']
+   
 
     # RESTful Api documents to be excluded
     app.config['RESTFUL_API_DOC_EXCLUDE'] = []

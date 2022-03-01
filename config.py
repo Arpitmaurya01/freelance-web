@@ -1,5 +1,12 @@
 class Config(object):
     '''# common configuration settings'''
+    JWT_SECRETE_KEY = "5Vm9mqafwOA9PCM20FSi6cMw_pk"
+    
+    # APIs that need to display documentation
+    API_DOC_MEMBER = [
+        "users",
+        
+    ]
     pass
 
 class ProdConfig(Config):
