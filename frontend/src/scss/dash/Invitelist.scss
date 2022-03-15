@@ -1,0 +1,35 @@
+.card {
+    .profile {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        box-shadow: 5px 5px 10px rgb(196, 196, 196);
+        border-bottom: 2px solid #e5e5e5;
+        margin: 10px 20px;
+    }
+
+    .flag-circle {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        object-fit: cover;
+
+
+    }
+
+    .park-info {
+        .park_title {
+            color: rgb(71, 71, 71);
+        }
+
+        .park_desc {
+            max-height: 150px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+}

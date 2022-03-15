@@ -1,0 +1,11 @@
+@import "color";
+
+.active {
+    color: $activeStatus;
+
+}
+
+.inactive {
+    color: $inactiveStatus;
+
+}

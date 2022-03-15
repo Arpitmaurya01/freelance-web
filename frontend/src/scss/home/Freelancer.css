@@ -1,0 +1,50 @@
+.experience_section .row {
+  align-items: center;
+}
+.experience_section .detail-box p {
+  margin-top: 20px;
+}
+.experience_section .detail-box .btn-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 45px -5px 0 -5px;
+}
+.experience_section .detail-box .btn-box a {
+  text-align: center;
+  width: 165px;
+  font-size: 15px;
+  margin: 5px;
+}
+.experience_section .detail-box .btn-box .btn-1 {
+  display: inline-block;
+  padding: 10px 0;
+  background-color: #ff4f5a;
+  color: #ffffff;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+  border-radius: 0;
+  text-decoration: none;
+}
+.experience_section .detail-box .btn-box .btn-1:hover {
+  background-color: transparent;
+  border-color: #ff4f5a;
+  color: #ff4f5a;
+}
+.experience_section .detail-box .btn-box .btn-2 {
+  display: inline-block;
+  padding: 10px 0;
+  background-color: #1a2e35;
+  color: #ffffff;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+  border-radius: 0;
+  text-decoration: none;
+}
+.experience_section .detail-box .btn-box .btn-2:hover {
+  background-color: transparent;
+  border-color: #1a2e35;
+  color: #1a2e35;
+}
+.experience_section .img-box img {
+  width: 100%;
+}/*# sourceMappingURL=Freelancer.css.map */

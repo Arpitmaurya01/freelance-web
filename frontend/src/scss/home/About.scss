@@ -1,0 +1,41 @@
+.about_section {
+    text-align: center;
+    margin-bottom: 80px;
+
+
+    .img-box {
+        img {
+            width: 100%;
+        }
+    }
+
+    .detail-box {
+        h2 {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin-top: 15px;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px 45px;
+            background-color: #ff4f5a;
+            color: #ffffff;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+            border: 1px solid transparent;
+            border-radius: 0;
+            margin-top: 25px;
+            text-decoration: none;
+
+            &:hover {
+                background-color: transparent;
+                border-color: #ff4f5a;
+                color: #ff4f5a;
+            }
+        }
+    }
+}

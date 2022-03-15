@@ -1,0 +1,16 @@
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-wrapper .card {
+  width: 60vw;
+  margin: 5% auto;
+  padding: 40px;
+}
+.form-wrapper .card .title {
+  color: #2C8A86;
+}
+.form-wrapper .card textarea {
+  resize: none;
+}/*# sourceMappingURL=FeedbackForm.css.map */

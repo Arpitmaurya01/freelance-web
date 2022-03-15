@@ -1,0 +1,30 @@
+.about_section {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.about_section .img-box img {
+  width: 100%;
+}
+.about_section .detail-box h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.about_section .detail-box p {
+  margin-top: 15px;
+}
+.about_section .detail-box a {
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: #ff4f5a;
+  color: #ffffff;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+  border-radius: 0;
+  margin-top: 25px;
+  text-decoration: none;
+}
+.about_section .detail-box a:hover {
+  background-color: transparent;
+  border-color: #ff4f5a;
+  color: #ff4f5a;
+}/*# sourceMappingURL=About.css.map */

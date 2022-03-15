@@ -1,0 +1,9 @@
+.main {
+  height: calc(100vh - 30px);
+  background: linear-gradient(to right, #1a2e35 55%, #1cbbb4 55%);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 40px;
+  overflow: hidden;
+}/*# sourceMappingURL=Header.css.map */

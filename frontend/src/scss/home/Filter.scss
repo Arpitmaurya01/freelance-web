@@ -1,0 +1,50 @@
+@import "color";
+
+.filter {
+    width: 100%;
+    min-height: 100vh;
+    background-color: $white;
+    padding: 8px;
+
+
+
+    .sortby {
+        padding: 15px;
+
+        .price {
+
+
+            .btn-round {
+                color: $white;
+                padding: 5px 20px;
+                border-radius: 15px;
+                -webkit-border-radius: 15px;
+                -moz-border-radius: 15px;
+                -ms-border-radius: 15px;
+                -o-border-radius: 15px;
+            }
+
+            .btn-round:nth-child(1) {
+                background-color: $project-title;
+
+
+            }
+
+            .btn-round:nth-child(2) {
+                background-color: $bidbtn;
+
+            }
+        }
+    }
+
+    .partition {
+        padding: 15px;
+
+        span {
+            margin-top: 20px;
+
+        }
+
+
+    }
+}

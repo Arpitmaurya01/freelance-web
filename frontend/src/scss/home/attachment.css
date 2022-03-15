@@ -1,0 +1,53 @@
+.attachment-wrapper {
+  width: 100%;
+  min-height: 250px;
+  background-color: #fff;
+  margin: 30px 0;
+  padding: 20px 0;
+}
+.attachment-wrapper .title {
+  color: #3DB2AD;
+}
+.attachment-wrapper .box-conatiner {
+  width: 100%;
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  grid-template-rows: repeat(1, 250px);
+  grid-auto-rows: 250px;
+  grid-gap: 25px;
+}
+@media (max-width: 767px) {
+  .attachment-wrapper .box-conatiner {
+    grid-template-columns: 80%;
+    justify-content: center;
+  }
+}
+.attachment-wrapper .box-conatiner .box {
+  background-color: #eeebeb;
+  padding: 15px;
+  margin-top: 30px;
+}
+.attachment-wrapper .box-conatiner .box .inner-box {
+  width: 100%;
+  height: 70%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.attachment-wrapper .box-conatiner .box .inner-box svg {
+  width: 80px;
+  height: auto;
+}
+.attachment-wrapper .box-conatiner .box .file {
+  margin: 5px 0;
+}
+.attachment-wrapper .box-conatiner .box .actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.attachment-wrapper .box-conatiner .box .actions a {
+  color: #008357;
+}/*# sourceMappingURL=attachment.css.map */

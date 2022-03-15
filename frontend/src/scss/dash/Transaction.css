@@ -1,0 +1,21 @@
+.find_AC {
+  min-height: 300px;
+  padding: 20px 40px;
+  margin-top: 20px;
+}
+
+.Bank_details {
+  margin-top: 100px;
+}
+@media (max-width: 1020px) {
+  .Bank_details {
+    margin-top: 20px;
+  }
+}
+
+.Tables {
+  width: 100%;
+}
+.Tables .table-settings .wrapper_setting {
+  padding: 10px;
+}/*# sourceMappingURL=Transaction.css.map */

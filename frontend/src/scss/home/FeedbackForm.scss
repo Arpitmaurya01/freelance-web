@@ -1,0 +1,23 @@
+@import "color";
+
+.form-wrapper {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card {
+        width: 60vw;
+        margin: 5% auto;
+        padding: 40px;
+
+
+        .title {
+            color: $project-title;
+        }
+
+        textarea {
+            resize: none;
+        }
+    }
+}

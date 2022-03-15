@@ -1,0 +1,30 @@
+.filter {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  padding: 8px;
+}
+.filter .sortby {
+  padding: 15px;
+}
+.filter .sortby .price .btn-round {
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.filter .sortby .price .btn-round:nth-child(1) {
+  background-color: #2C8A86;
+}
+.filter .sortby .price .btn-round:nth-child(2) {
+  background-color: #FF4F5A;
+}
+.filter .partition {
+  padding: 15px;
+}
+.filter .partition span {
+  margin-top: 20px;
+}/*# sourceMappingURL=Filter.css.map */

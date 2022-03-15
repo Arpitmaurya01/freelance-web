@@ -1,0 +1,12 @@
+@import "color";
+
+.star_active {
+    color: $rating;
+    margin-right: 8px;
+
+}
+
+.star_notactive {
+    color: $muted;
+    margin-right: 8px;
+}

@@ -1,0 +1,170 @@
+.working {
+  background-image: linear-gradient(to top, #329B96, #52E5DF);
+  margin: 20px 0;
+  padding: 30px;
+}
+.working .title {
+  align-self: center;
+  text-align: center;
+  color: #fff;
+}
+.working .container .row .item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  margin: 50px 0;
+}
+@media (max-width: 767px) {
+  .working .container .row .item {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: #fff;
+  }
+  .working .container .row .item:not(:last-child)::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: -80%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 180px;
+    background-color: #fff;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+  .working .container .row .item:not(:last-child)::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: -35%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #329B96;
+    border: 4px solid #fff;
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  .working .container .row .item:not(:last-child):nth-child(1):after {
+    content: "1";
+  }
+  .working .container .row .item:not(:last-child):nth-child(2):after {
+    content: "2";
+  }
+  .working .container .row .item:not(:last-child):nth-child(3):after {
+    content: "3";
+  }
+}
+@media (max-width: 992px) {
+  .working .container .row .item svg {
+    display: none;
+  }
+}
+.working .container .row .item svg.up {
+  position: absolute;
+  top: -9%;
+  left: 63%;
+}
+.working .container .row .item svg.down {
+  position: absolute;
+  bottom: 60%;
+  left: 60%;
+}
+.working .container .row .item .circle {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin: 10px auto;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+}
+.working .container .row .item .circle img {
+  width: 70%;
+  height: auto;
+}
+.working .container .row .item h4 {
+  text-transform: capitalize;
+  color: #fff;
+  margin: 10px auto;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .working .container .row .item h4 {
+    color: #329B96;
+  }
+}
+.working .container .row .item .text {
+  text-align: center;
+  margin: 10px auto;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .working .container .row .item .text {
+    color: #329B96;
+  }
+}
+.working .container .row .item:not(:first-child) .circle::after {
+  position: absolute;
+  content: "";
+  top: calc(50% - 20px);
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+@media (max-width: 1199px) {
+  .working .container .row .item:not(:first-child) .circle::after {
+    display: none;
+  }
+}
+.working .container .row .item:first-child .circle::after {
+  position: absolute;
+  content: "";
+  top: calc(50% - 20px);
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+@media (max-width: 1199px) {
+  .working .container .row .item:first-child .circle::after {
+    display: none;
+  }
+}/*# sourceMappingURL=working.css.map */

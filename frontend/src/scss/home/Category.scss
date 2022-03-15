@@ -1,0 +1,93 @@
+@import "../../scss/volt/colors";
+
+.category_section {
+    background-color: $white;
+    text-align: center;
+    padding: 50px !important;
+
+
+    .heading_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            position: relative;
+            color: $project-title;
+
+            &::before {
+                position: absolute;
+                left: 25px;
+                bottom: -25px;
+                content: "";
+                width: 100%;
+                height: 2px;
+                background-color: $project-title;
+                display: block;
+                margin-bottom: 10px;
+            }
+
+        }
+    }
+
+    .category_container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+        grid-row-gap: 40px;
+
+        margin-top: 30px;
+        color: $project-title;
+
+        @media (max-width:767px) {
+
+            grid-template-columns: repeat(auto-fit, 100%);
+            place-items: center;
+
+
+        }
+
+
+
+        .box {
+
+            min-width: 130px;
+            max-width: 200px;
+            min-height: 200px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-preferred-size: 26%;
+            flex-basis: 26%;
+
+
+            .img-box {
+                width: 60px;
+                height: 60px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+
+            }
+
+            .detail-box {
+
+                margin-top: 20px;
+                text-align: center;
+            }
+        }
+    }
+}

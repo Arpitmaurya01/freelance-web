@@ -1,0 +1,16 @@
+.main {
+    height: calc(100vh - 30px);
+    background: -webkit-gradient(linear, left top, right top, color-stop(55%, #1a2e35), color-stop(55%, #1cbbb4));
+    background: linear-gradient(to right, #1a2e35 55%, #1cbbb4 55%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 40px;
+    overflow: hidden;
+
+}

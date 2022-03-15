@@ -1,0 +1,20 @@
+.switch-btn-wrapper {
+  margin: 40px auto;
+}
+.switch-btn-wrapper .switch-btn {
+  background-color: transparent;
+  color: black;
+  min-width: 150px;
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
+  -moz-transition: background 0.25s linear;
+  -ms-transition: background 0.25s linear;
+  -o-transition: background 0.25s linear;
+}
+.switch-btn-wrapper .switch-btn.active {
+  background-color: #3DB2AD;
+  color: #fff;
+  border: 0;
+  outline: none;
+  box-shadow: none;
+}/*# sourceMappingURL=switchbtn.css.map */

@@ -1,0 +1,159 @@
+@import "color.scss";
+
+.bid-btn {
+    background-color: $bidbtn;
+    color: $white;
+
+    @media (max-width:767px) {
+        display: block;
+        justify-self: flex-end;
+        margin: 40px 0 0px auto;
+
+    }
+
+
+}
+
+.status {
+    span:first-child {
+        padding-right: 8px;
+    }
+
+    span:last-child {
+        padding-left: 8px;
+    }
+}
+
+.card {
+    margin-bottom: 20px;
+
+    .card-body {
+        padding: 30px;
+
+
+        .card-title {
+            a {
+
+                color: $project-title;
+            }
+        }
+
+        .main-info {
+
+            margin: 15px auto;
+
+            @media (max-width:767px) {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+
+
+            .right {
+                text-align: right;
+
+                @media (max-width:767px) {
+                    text-align: left;
+                }
+
+                p {
+                    text-transform: capitalize;
+                    font-weight: 600;
+                    font-size: 1.25rem;
+                }
+            }
+        }
+
+        .desc {
+
+            text-overflow: ellipsis;
+            text-transform: capitalize;
+
+        }
+
+        .link_wrap {
+            @media (max-width:767px) {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                font-size: 1rem;
+                margin: 10px 0px 30px 0px;
+            }
+
+            a {
+                color: $link;
+                text-decoration: none;
+                margin: 20px 30px 0px 0px;
+            }
+        }
+
+        .action {
+            margin: 5px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+
+
+
+            .profile_verify {
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+
+
+                svg {
+                    margin-right: 10px;
+                    color: $link;
+                    font-size: 20px;
+                }
+
+                span {
+                    font-weight: 600;
+                }
+            }
+
+
+
+            .location {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                svg {
+                    margin-right: 10px;
+                    color: $mapmarker;
+                    font-size: 20px;
+                }
+
+            }
+
+
+
+
+
+
+        }
+    }
+
+    .card-footer {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        background-color: $white;
+        border: 0;
+        padding: 15px 30px;
+        border-top: 1px solid rgba(0, 0, 0, 0.25);
+
+        svg {
+            margin-right: 10px;
+            font-size: 15px;
+
+        }
+
+        span {
+            font-size: 15px;
+        }
+    }
+}

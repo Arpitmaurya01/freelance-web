@@ -1,0 +1,27 @@
+.card .profile {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  box-shadow: 5px 5px 10px #c4c4c4;
+  border-bottom: 2px solid #e5e5e5;
+  margin: 10px 20px;
+}
+.card .flag-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card .park-info .park_title {
+  color: #474747;
+}
+.card .park-info .park_desc {
+  max-height: 150px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}/*# sourceMappingURL=Invitelist.css.map */
