@@ -10,6 +10,8 @@ import NotFound from './examples/NotFound';
 import { useLocation } from 'react-router-dom';
 import Signin from './examples/Signin';
 import Signup from './examples/Signup';
+import ForgotPassword from './examples/ForgotPassword';
+import ResetPassword from './examples/ResetPassword';
 
 
 
@@ -46,15 +48,14 @@ const RouteWithNavFooter=(({ component: Component, ...rest })=>{
 
 
 export default () => (
-  <Switch>
-   
-    
+  <Switch>    
+    <Route exact  path={"/"} component={Signin} />
     <Route  path={userRoutes.Login.path} component={Signin} />
     <Route  path={userRoutes.Signup.path} component={Signup} />
+    <Route  path={userRoutes.Reset.path} component={ResetPassword} />
+    <Route  path={userRoutes.Forgot.path} component={ForgotPassword} />
     <Redirect from="/freelancerWeb" to="/" ></Redirect> 
     <Redirect from="/freelancer_web" to="/" ></Redirect> 
-    <Route   path="*" component={NotFound} />
-    
-  
+    <Route   path="*" component={NotFound} />  
   </Switch>
 );

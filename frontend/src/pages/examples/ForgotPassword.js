@@ -4,18 +4,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import { Col, Row, Form, Card, Button, Container, InputGroup } from '@themesberg/react-bootstrap';
 import { Link } from 'react-router-dom';
+import {userRoutes} from "../../userRoutes";
 
-import { dashboardRoutes } from "../dashboard/dashboardRoutes";
 
-
-export default () => {
+export default  () => {
   return (
     <main>
       <section className="vh-lg-100 mt-4 mt-lg-0 bg-soft d-flex align-items-center">
         <Container>
           <Row className="justify-content-center">
             <p className="text-center">
-              <Card.Link as={Link} to={dashboardRoutes.Signin.path} className="text-gray-700">
+              <Card.Link as={Link} to={userRoutes.Login.path} className="text-gray-700">
                 <FontAwesomeIcon icon={faAngleLeft} className="me-2" /> Back to sign in
             </Card.Link>
             </p>

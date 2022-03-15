@@ -14,6 +14,8 @@ export const userRoutes = {
     Chatwithid:{path:"/chat/?id=1"},
     Login:{path:"/login"},
     Signup:{path:"/signup"},
+    Reset:{path:"/reset"},
+    Forgot:{path:"/forgot"},
     dashboard: { path: "/dashboard" },
     NotFound: { path: "/dashboard/examples/404" },
     

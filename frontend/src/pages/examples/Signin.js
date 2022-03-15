@@ -7,6 +7,17 @@ import { Col, Row, Form, Card, Button, FormCheck, Container, InputGroup } from '
 import { Link } from 'react-router-dom';
 
 import {userRoutes} from '../../userRoutes';
+import Api from "../../api";
+let temp = Api("hyuyf543e65r67576").get("users/").then((res)=>{
+  console.log(res);
+}).catch(function (error) {
+  // handle error
+  console.log(error);
+})
+.then(function () {
+  // always executed
+});
+console.log(temp,"temp che")
 export default () => {
   const BgImage="/static/assets/img/illustrations/signin.svg";
   return (
@@ -20,7 +31,7 @@ export default () => {
           </p>
           <Row className="justify-content-center form-bg-image" style={{ backgroundImage: `url(${BgImage})` }}>
             <Col xs={12} className="d-flex align-items-center justify-content-center">
-              <div className="bg-white shadow-soft border rounded border-light p-4 p-lg-5 w-100 fmxw-500">
+              <div className="bg-white shadow-soft border rounded border-light p-4 p-lg-5 w-100 fmxw-800">
                 <div className="text-center text-md-center mb-4 mt-md-0">
                   <h3 className="mb-0">Sign in to our platform</h3>
                 </div>
