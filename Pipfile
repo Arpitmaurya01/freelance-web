@@ -8,7 +8,11 @@ flask = "*"
 flask-mongoengine = "*"
 flask-bcrypt = "*"
 flask-docs = "*"
+<<<<<<< HEAD
 flask_jwt_excendeed = "*"
+=======
+flask-jwt-extended="*"
+>>>>>>> 6c00586a0e59dc237d6b1672bb2c90bbf156c461
 
 [dev-packages]
 
