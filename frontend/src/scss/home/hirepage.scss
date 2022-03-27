@@ -1,0 +1,55 @@
+.hire-page {
+
+
+    .filter {
+
+        position: fixed !important;
+        top: 0px;
+        width: 350px;
+        height: 100vh;
+        background-color: #fff;
+        padding: 150px 20px 180px;
+
+
+
+
+
+
+        @media (max-width:767px) {
+            top: 75px;
+            height: 100vh;
+            z-index: 9;
+            width: 70%;
+            padding: 80px 20px;
+
+            p,
+            span {
+                font-size: 1.5rem;
+            }
+
+            label,
+            svg {
+
+                font-size: 1rem;
+
+            }
+
+
+
+        }
+
+        .close-filter {
+            width: 50px;
+            height: 50px;
+            font-size: 2rem;
+            background-color: transparent;
+            border: 0;
+
+        }
+
+
+
+
+
+    }
+}

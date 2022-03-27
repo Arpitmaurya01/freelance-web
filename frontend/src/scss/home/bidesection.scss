@@ -30,7 +30,7 @@
         h1 {
             align-self: flex-start;
             color: $white;
-            font-size: 40px;
+            font-size: 2rem;
             font-weight: bold;
             margin-top: 20px;
         }
@@ -45,6 +45,12 @@
 
         h1 {
             color: $heading-danger;
+            font-size: 2rem;
+
+            @media (max-width:767px) {
+                font-size: 1.5rem;
+
+            }
         }
 
         .container {
@@ -57,13 +63,35 @@
             .card {
                 margin: 20px auto;
                 background-color: $bid-card;
+                font-size: 1rem;
 
 
                 .status {
+                    span {
+
+                        font-size: 1rem;
+                    }
+
                     i {
+                        font-size: 1rem;
                         margin: 0 8px;
 
                     }
+
+                }
+
+                .budget {
+
+
+                    p {
+                        font-size: 1rem;
+
+                    }
+
+                }
+
+                .desc {
+                    font-size: 1rem;
 
                 }
 
@@ -76,6 +104,12 @@
                 .card-footer {
                     background-color: $bid-card;
 
+                    span,
+                    svg {
+
+                        font-size: 1rem;
+                    }
+
 
                 }
 
@@ -85,18 +119,42 @@
                     justify-content: space-between;
                     align-items: center;
 
+                    @media (maax-width:3220px) {
+                        justify-content: flex-start;
+
+                    }
+
                     .profile_verify,
                     .location {
+                        margin: .5rem 0;
+
                         span {
                             margin-left: 8px;
                             line-height: 15px;
+                            font-size: 1rem;
                         }
 
                     }
 
+                    .rating {
+                        margin: .5rem 0;
+                        font-size: 1.25rem;
+                    }
+
                     .profile_verify {
+                        margin: .5rem 0;
+
+                        @media (max-width: 321px) {
+                            margin: .25rem 0;
+                        }
+
                         svg {
                             color: rgb(41, 255, 105);
+                        }
+
+                        span {
+
+                            font-size: 1rem;
                         }
 
                     }
@@ -106,6 +164,12 @@
                     background-color: $heading-danger;
                     color: $white;
                     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+
+                    @media (max-width: 321px) {
+
+                        display: block;
+                        width: 100%;
+                    }
                 }
             }
 

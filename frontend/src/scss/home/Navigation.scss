@@ -17,6 +17,42 @@
     -o-transition: background 0.25s linear;
 }
 
+.simplebar-wrapper {
+
+    .accordion {
+
+
+        .accordion-collapse {
+            .multi-level {
+                padding-left: 0;
+
+
+                .nav-item {
+                    padding-left: 0;
+
+                    .nav-link {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    a.nav-link {
+
+        font-size: 1rem;
+
+        @media (max-width:767px) {
+
+            font-size: 1.5rem !important;
+
+        }
+
+    }
+}
+
 
 .navbar-toggler {
     outline: none;
@@ -77,6 +113,8 @@
         }
 
 
+
+
         a {
 
             color: #fff;
@@ -91,7 +129,7 @@
 }
 
 .custom_menu-btn {
-    button {
+    div {
         outline: none;
         border: none;
         background-color: transparent;
@@ -117,7 +155,7 @@
 }
 
 .menu_btn-style {
-    button {
+    div {
 
         .s-1 {
             -webkit-transform: rotate(45deg) translate(8px, 8px);

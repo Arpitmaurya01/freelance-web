@@ -15,8 +15,13 @@
     }
 
     .container {
-        .row {
 
+        @media(max-width:767px) {
+            padding: 0;
+        }
+
+
+        .row {
 
 
 
@@ -28,8 +33,80 @@
                 align-items: center;
                 background-color: transparent;
                 margin: 50px 0;
+                font-size: 1rem;
 
-                @media(max-width:767px) {
+                @media(max-width:321px) {
+                    width: 100%;
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                    background-color: #fff;
+                    text-align: left;
+
+                    &:not(:last-child)::before {
+                        position: absolute;
+                        content: "";
+                        left: 50%;
+                        bottom: -72%;
+                        transform: translateX(-50%);
+                        width: 5px;
+                        height: 180px;
+                        background-color: #fff;
+                        -webkit-transform: translateX(-50%);
+                        -moz-transform: translateX(-50%);
+                        -ms-transform: translateX(-50%);
+                        -o-transform: translateX(-50%);
+
+
+                    }
+
+                    &:not(:last-child)::after {
+                        position: absolute;
+                        content: "";
+                        left: 50%;
+                        bottom: -35%;
+                        transform: translateX(-50%);
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        background-color: #329B96;
+                        border: 4px solid #fff;
+                        color: #fff;
+                        font-weight: 500;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        -webkit-transform: translateX(-50%);
+                        -moz-transform: translateX(-50%);
+                        -ms-transform: translateX(-50%);
+                        -o-transform: translateX(-50%);
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                    }
+
+                    &:not(:last-child):nth-child(1):after {
+                        content: "1";
+                        font-size: 1rem;
+                    }
+
+                    &:not(:last-child):nth-child(2):after {
+                        content: "2";
+                        font-size: 1rem;
+                    }
+
+                    &:not(:last-child):nth-child(3):after {
+                        font-size: 1rem;
+                        content: "3";
+                    }
+
+                }
+
+                @media (min-width:322px) and (max-width:992px) {
+                    width: 100%;
                     border-radius: 10px;
                     -webkit-border-radius: 10px;
                     -moz-border-radius: 10px;
@@ -50,6 +127,8 @@
                         -moz-transform: translateX(-50%);
                         -ms-transform: translateX(-50%);
                         -o-transform: translateX(-50%);
+
+
                     }
 
                     &:not(:last-child)::after {
@@ -156,7 +235,7 @@
                     margin: 10px auto;
                     text-align: center;
 
-                    @media (max-width:767px) {
+                    @media (max-width:992px) {
                         color: #329B96;
                     }
                 }
@@ -170,7 +249,7 @@
                     margin: 10px auto;
                     color: #fff;
 
-                    @media (max-width:767px) {
+                    @media (max-width:992px) {
                         color: #329B96;
                     }
                 }

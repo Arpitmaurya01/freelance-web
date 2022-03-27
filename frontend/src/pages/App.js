@@ -13,6 +13,9 @@ import Signup from './examples/Signup';
 import ForgotPassword from './examples/ForgotPassword';
 import ResetPassword from './examples/ResetPassword';
 
+import PostProject from "./PostProject.jsx";
+
+
 
 
 
@@ -54,6 +57,7 @@ export default () => (
     <Route  path={userRoutes.Signup.path} component={Signup} />
     <Route  path={userRoutes.Reset.path} component={ResetPassword} />
     <Route  path={userRoutes.Forgot.path} component={ForgotPassword} />
+    <Route  path={userRoutes.PostProject.path} component={PostProject} />
     <Redirect from="/freelancerWeb" to="/" ></Redirect> 
     <Redirect from="/freelancer_web" to="/" ></Redirect> 
     <Route   path="*" component={NotFound} />  

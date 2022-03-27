@@ -1,5 +1,10 @@
 @import "./color";
 
+@media (max-width:767px) {
+    * {
+        font-size: 14px;
+    }
+}
 
 
 .wrapper {
@@ -7,6 +12,8 @@
     min-height: 100vh;
     display: grid;
     place-items: center;
+
+
 
 
     .card {
@@ -34,6 +41,13 @@
             grid-gap: 25px;
             margin: 20px auto;
 
+            @media (max-width:767px) {
+
+                grid-template-columns: repeat(auto-fit, 100%);
+
+
+            }
+
             .box {
                 background-color: $white;
                 border: 2px solid rgb(117, 117, 117);
@@ -55,6 +69,8 @@
                     padding: 5px;
 
                 }
+
+
             }
 
             .box.active {

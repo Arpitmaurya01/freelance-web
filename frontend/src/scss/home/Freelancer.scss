@@ -1,4 +1,13 @@
+@media (max-width:767px) {
+    * {
+
+        font-size: 80%;
+    }
+}
+
 .experience_section {
+    margin-bottom: 40px;
+
     .row {
         -webkit-box-align: center;
         -ms-flex-align: center;
@@ -6,6 +15,20 @@
     }
 
     .detail-box {
+        .heading_container {
+            @media (max-width:767px) {
+                margin: 20px auto;
+
+            }
+
+            h2 {
+
+                font-size: 2rem;
+
+
+            }
+        }
+
         p {
             margin-top: 20px;
         }
@@ -14,14 +37,19 @@
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+
+            @media (max-width:767px) {
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+            }
+
             margin: 45px -5px 0 -5px;
 
             a {
                 text-align: center;
                 width: 165px;
-                font-size: 15px;
+                font-size: 1.25rem;
                 margin: 5px;
             }
 

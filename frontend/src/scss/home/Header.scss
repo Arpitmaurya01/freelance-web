@@ -1,5 +1,5 @@
 .main {
-    height: calc(100vh - 30px);
+    min-height: 500px;
     background: -webkit-gradient(linear, left top, right top, color-stop(55%, #1a2e35), color-stop(55%, #1cbbb4));
     background: linear-gradient(to right, #1a2e35 55%, #1cbbb4 55%);
     display: -webkit-box;
@@ -11,6 +11,10 @@
     flex-direction: column;
     position: relative;
     margin-bottom: 40px;
-    overflow: hidden;
+    overflow: visible;
+
+    @media (max-width:767px) {
+        background: #1cbbb4;
+    }
 
 }
