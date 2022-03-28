@@ -1,11 +1,11 @@
-import json
+from datetime import date
 
-# Opening JSON file
-with open('Country.json') as json_file:
-    data = json.load(json_file)
 
-    # Print the type of data variable
-    print("Type:", type(data))
+def agecal(y,m,d):
+    import datetime
+    today=datetime.datetime.now().date()
+    dob=datetime.date(y,m,d)
+    age=int((today-dob).days/12)
+    print(age)
 
-    # Print the data of dictionary
-    print(data['country'])
+agecal(2017,8,22)    

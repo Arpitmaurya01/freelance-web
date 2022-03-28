@@ -84,7 +84,7 @@ def signup():
         
         user.country=data['country']
         user.save()
-        user.country_name
+        
         response["data"]= user
         response["error"]=False
         response["message"]="User Created"
@@ -102,48 +102,79 @@ def signup():
 
     return jsonify(response)
 
-@user_blueprint.route('/login/',methods=['POST'])
+
+@user_blueprint.route('/login/', methods=['POST'])
 def login():
-    '''json
-    # Input Field
-    {
-        "username": string,
-        "password": string
-    }
-    
-    
-    # Output Field
-    {
-        "error": boolean,
-        "Massage": string,
-        "data":
-        "token":
-        "user":
-    }
-    '''
     data = request.get_json()
-    response= {
-        "error":True,
-        "data":"",
-        "message":""
+    response = {
+        "error": True,
+        "data": "",
+        "message": ""
     }
-    username = data["username"]
+    email = data["username"]
     password = data["password"]
     try:
         # check if username is registered or not
-        user = User.objects.get(username = username)
+        user = User.objects.get(email=email)
     except:
         user = None
-    
+
     if user is not None:
-        matched = user.check_password(password)    
+        matched = user.check_password(password)
         if matched:
             # generate token
             # send token as a response
-            access_token = create_access_token(identity=username)
-            response["data"]={"user":user,"token":access_token}
-            response['error']=False
-            response['message']="User Logged in"
+            access_token = create_access_token(identity=email)
+            response["data"] = {"user": user, "token": access_token}
+            response['error'] = False
+            response['message'] = "User Logged in"
         else:
-            response['message']="Invalid username or password"
+            response['message'] = "Invalid username or password"
     return jsonify(response)
+
+@user_blueprint.route('/reset/', methods=['POST'])
+def reset_pass():
+    data = request.get_json()
+    response = {
+        "error": True,
+        "data": "",
+        "message": ""
+    }
+    
+
+    email = data["email"]
+    try:
+        # check if username is registered or not
+        user = User.objects.get(email=email)
+        
+    except:
+        
+        user = None
+    
+  
+   
+    if user is not None:
+        pattern = r"^(?=.*\d)(?=.*[a-zA-Z])[a-zA-Z0-9]{6,}"
+        matched = match(pattern, data['password'])
+        if matched is None:
+            raise MyException("password must contain a number ,an alphabet, and minimum of 6 charecters")
+               
+        confirm_password = data['confirm_password']
+        if data["password"] != data["confirm_password"]:
+            raise MyException("Password does not matched")
+
+        
+        user.set_password(data['password'])
+        user.save()
+    
+
+    
+
+        
+       
+        response["data"] = user
+        response["error"] = False
+        response["message"] = "Password Updated"
+
+    return jsonify(response)
+
