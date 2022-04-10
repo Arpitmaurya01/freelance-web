@@ -8,17 +8,29 @@ import { Link } from 'react-router-dom';
 
 import {userRoutes} from '../../userRoutes';
 import Api from "../../api";
-let temp = Api("hyuyf543e65r67576").get("users/").then((res)=>{
-  console.log(res);
+const data={username:"Amman124@gmail.com",password:"Ravan123"}
+
+let temp = Api().post("api/login/",data).then((res)=>{
+  console.log(res,"login response");
+  if (res.data.error){
+    alert(res.data.message)
+  }else{
+    alert(res.data.message)
+    window.localStorage.setItem("token", res.data.data.token)
+
+  }
 }).catch(function (error) {
   // handle error
   console.log(error);
-})
+  })
 .then(function () {
   // always executed
+
 });
-console.log(temp,"temp che")
+
+console.log(temp,"temp called")
 export default () => {
+
   const BgImage="/static/assets/img/illustrations/signin.svg";
   return (
     <main>
@@ -63,7 +75,7 @@ export default () => {
                       <Card.Link className="small text-end">Lost password?</Card.Link>
                     </div>
                   </Form.Group>
-                  <Button variant="primary" type="submit" className="w-100">
+                  <Button variant="primary" type="submit"  className="w-100">
                     Sign in
                   </Button>
                 </Form>

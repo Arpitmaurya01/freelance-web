@@ -39,11 +39,14 @@ def create_app(object_name):
     
     # or you can call create_module for each module 
     from .users import create_module as register_user
-    
+    from .project import create_module as register_project
+
+
     # register you modules here
     register_user(app)
-    
-    
+    register_project(app)
+
+
     
     
     ApiDoc(

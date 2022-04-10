@@ -10,7 +10,6 @@ const Final = ({ values, handleFormData, prevStep }) => {
     const { projectTitle, desc, category, minbudget, maxbudget, bidstart, bidend, bidvalue, proposal, attachment, termsandcondition } = values;
 
 
-
     return (
 
         <div className="wrapper" style={{ marginTop: 90 }}>
